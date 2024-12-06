@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Perritos</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f7fa;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff6f61;
+        }
+
+        .dog-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .dog-card {
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 10px;
+            text-align: center;
+            width: 200px;
+            padding: 10px;
+        }
+
+        .dog-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .dog-card button {
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin-top: 10px;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 8px;
+            font-size: 1em;
+        }
+
+        .dog-card button:hover {
+            background-color: #ff3d2e;
+        }
+    </style>
+</head>
+<body>
+
+<h1>¡Adopta o elige un perrito!</h1>
+<div class="dog-list">
+    <div class="dog-card">
+        <img src="https://images.unsplash.com/photo-1560807707-8cc77767d783" alt="Perrito 1">
+        <h3>Max</h3>
+        <button onclick="addToCart('Max')">Agregar a carrito</button>
+    </div>
+    <div class="dog-card">
+        <img src="https://images.unsplash.com/photo-1583511655826-2133b6a5b6d5" alt="Perrito 2">
+        <h3>Luna</h3>
+        <button onclick="addToCart('Luna')">Agregar a carrito</button>
+    </div>
+    <div class="dog-card">
+        <img src="https://images.unsplash.com/photo-1598136496203-0b812f066ee1" alt="Perrito 3">
+        <h3>Charlie</h3>
+        <button onclick="addToCart('Charlie')">Agregar a carrito</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
