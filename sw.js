@@ -14,8 +14,7 @@ const urlsToCache = [
   '/',
   '/index.html',
   '/script.js',
-  '/logo2-192x192.png',
-  '/icon-512x512.png'
+'/premium_photo-1676389281733-aaefab0e7907.jpeg',
 ];
 
 self.addEventListener('install', (event) => {
